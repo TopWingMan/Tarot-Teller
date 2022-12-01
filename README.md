@@ -22,4 +22,3 @@ maybe: reveresd choice on the gui
 User can click a button to draw a randomized card from tarot deck
 Card displays in center of screen with descripton displayed
 Users daily reading saved in persitent data
-
