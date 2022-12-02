@@ -23,7 +23,20 @@
           </tr>
         </div>
     </header>
+<!--Unsplash API Background   
+    <script>
+        let endpoint = 'https://api.unsplash.com/photos/random?client_id=-PsGgCr_6114rpC-glgFju9W7lxLkk2TbaixNnIp8gc';
 
+        let imageElement = document.querySelector ("#unsplashImage");
+
+        fetch(endpoint)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonData) {
+            imageElement.src = jsonData.urls.regular;
+        })
+    </script> -->
 <br>
 <br>
 <div class="mui--text-display3 row wow zoomInDown mui--text-center">Your Daily Tarot Reading</div>
