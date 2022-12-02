@@ -1,23 +1,17 @@
-html,
-body {
+html, body 
+{
   height: 100%;
 }
 
-html,
-body,
-input,
-textarea,
-button {
+html, body, input, textarea, button 
+{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-
-/**
- * Header CSS
- */
-header {
+header 
+{
   position: fixed;
   top: 0;
   right: 0;
@@ -25,36 +19,31 @@ header {
   z-index: 2;
 }
 
-header ul.mui-list--inline {
+header ul.mui-list--inline 
+{
   margin-bottom: 0;
 }
 
-header a {
+header a 
+{
   color: #fff;
 }
 
-header table {
+header table 
+{
   width: 100%;
 }
 
-
-/**
- * Content CSS
- */
-#content-wrapper {
+#content-wrapper 
+{
   min-height: 100%;
-
-  /* sticky footer */
   box-sizing: border-box;
   margin-bottom: -100px;
   padding-bottom: 100px;
 }
 
-
-/**
- * Footer CSS
- */
-footer {
+footer 
+{
   box-sizing: border-box;
   height: 100px;
   background-color: #eee;
