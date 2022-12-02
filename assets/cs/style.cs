@@ -1,6 +1,3 @@
-/**
- * Body CSS
- */
 html,
 body {
   height: 100%;
