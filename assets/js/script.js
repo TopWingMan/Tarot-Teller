@@ -16,14 +16,16 @@ document.getElementById("button").addEventListener("click", function()
         console.log(data.cards[randomNumber].name);
         console.log(data.cards[randomNumber].img);
         console.log(data.cards[randomNumber].fortune_telling[0]);
+        DisplayCard(data.cards[randomNumber].img);
     });
-
-    DisplayCard(data.cards[randomNumber].img);
 })
 
-function DisplayCard(img)
+function DisplayCard(imgVar)
 {
-    var imgPath = img;
+    var img = document.createElement("img");
+    img.src = "./assets/json/cards/" + imgVar;
+    var src = document.getElementById("cardPlace");
+    src.appendChild(img);
 }
 
 // gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!
