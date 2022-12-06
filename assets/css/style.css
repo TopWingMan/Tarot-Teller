@@ -10,14 +10,19 @@ html, body, input, textarea, button
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-/* header 
+body
 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-} */
+  display: flex;
+  flex-direction: column;
+}
+
+header 
+{
+  text-align: center;
+  align-items: center;
+  font-size: large;
+  width: 100%;
+}
 
 header ul.mui-list--inline 
 {
@@ -42,11 +47,11 @@ header table
   margin: 0 auto;
 }
 
-#cardPlace {
+#cardPlace, #cardName, #cardDescription {
   display: flex;
   justify-content: center;
   align-items:center;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .reveal-fortune {
@@ -55,8 +60,6 @@ header table
   align-items: center;
   margin: 0 auto;
 }
-
-
 
 #content-wrapper 
 {
