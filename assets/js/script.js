@@ -6,13 +6,18 @@ const tarotData = (src="./assets/json/tarot-images.json");
 if (history[0] != "")
 {
     //Hide button
+    document.getElementById("button").style.display = "none";
 
-    //Tell user we have already read thier fortune today and to come back tommorow
+    //Tell user we have already read their fortune today and to come back tommorow
+
+    //Display card name
+    DisplayCardName(history[0]);
 
     //Display todays fortune
     DisplayCard(history[0]);
 
     //Display card description
+    DisplayCardDescription(history[0]);
 
     console.log("Already Have Done Daily Reading");
 }
@@ -25,6 +30,7 @@ else
     document.getElementById("button").addEventListener("click", function()
     {
         //Hide Button On press
+        document.getElementById("button").style.display = "none";
 
         //Get card information
         fetch (tarotData)
@@ -67,11 +73,6 @@ function DisplayCardDescription(cardDescription)
 function StoreData(StoreData)
 {
     history[0] = StoreData;
-    console.log(StoreData);
 }
 
 // gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!
-
-// add card info below/in the 'card', arcana, suit, fortune telling, keywords, meanings; light and/or shadow, numerology, astrology, affirmation, questions to ask.
-
-// for future maybe, use the reverse, create function for light and shadow
