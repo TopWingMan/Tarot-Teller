@@ -31,19 +31,24 @@ else
         .then((response) => response.json())
         .then((data) =>
         {
-            console.log(data.cards[chosenCardNumber].name);
-            console.log(data.cards[chosenCardNumber].img);
-            console.log(data.cards[chosenCardNumber].fortune_telling[0]);
+            //Display card name
+            DisplayCardName(data.cards[chosenCardNumber].name);
 
             //Display card img
             DisplayCard(data.cards[chosenCardNumber].img);
 
             //Display card fortune description
+            DisplayCardDescription(data.cards[chosenCardNumber].fortune_telling[0]);
 
             //Store card data as persistent data
             StoreData(chosenCardNumber);
         });
     })
+}
+
+function DisplayCardName(cardName)
+{
+    document.getElementById("cardName").innerHTML = cardName;
 }
 
 function DisplayCard(imgVar)
@@ -52,6 +57,11 @@ function DisplayCard(imgVar)
     img.src = "./assets/json/cards/" + imgVar;
     var src = document.getElementById("cardPlace");
     src.appendChild(img);
+}
+
+function DisplayCardDescription(cardDescription)
+{
+    document.getElementById("cardDescription").innerHTML = cardDescription;
 }
 
 function StoreData(StoreData)
