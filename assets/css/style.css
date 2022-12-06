@@ -16,11 +16,12 @@ body
   flex-direction: column;
 }
 
-header 
+header
 {
   text-align: center;
   align-items: center;
-  font-size: large;
+  justify-content: center;
+  margin: 0px;
   width: 100%;
 }
 
@@ -52,6 +53,7 @@ header table
   justify-content: center;
   align-items:center;
   margin-top: 10px;
+  font-size: large;
 }
 
 .reveal-fortune {
