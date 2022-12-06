@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 
-    <!-- add the openprops.css link for the cards card -->
-  </head>
-  <body>
+  <!-- add the openprops.css link for the cards card -->
+</head>
 
-    <header class="mui-appbar mui--z3">
-        <div class="mui-container-fluid mui--text-display2 mui-col-md-8">
-          <tr class="mui--appbar-height" > 
-            <td class="mui--text-title">Your TarotTeller</td>
-          </tr>
-        </div>
-    </header>
+<body>
 
-<br>
-<br>
-<div class="mui--text-display3 row wow zoomInDown mui--text-center">Your Daily Tarot Reading</div>
-<br>
-<br>
+  <header class="mui-appbar mui--z3">
+    <div class="mui-container-fluid mui--text-display2 mui-col-md-8">
+      <tr class="mui--appbar-height">
+        <td class="mui--text-title">Your TarotTeller</td>
+      </tr>
+    </div>
+  </header>
 
-<div class="select-card">
-<button class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary" id="button">Select Your Card</button>
-</div>
-<br>
-<br>
+  <br>
+  <br>
+  <div class="mui--text-display3 row wow zoomInDown mui--text-center">Your Daily Tarot Reading</div>
+  <br>
+  <br>
 
-<div id="cardPlace"></div>
+  <div class="select-card">
+    <button class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary" id="button">Select Your Card</button>
+  </div>
+  <br>
+  <br>
 
-<button class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary" id="button"><b>Reveal Your Fortune...</b></button>
-<br>
-<br>
+  <div id="cardPlace"></div>
 
-<!-- add a card with the image with description on the card using openprops.css -->
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
-  </body>
+  <div class="reveal-fortune">
+     <button class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary" id="button">
+    <b>Reveal Your Fortune...</b></button>
+  </div>
+  <br>
+  <br>
+
+  <!-- add a card with the image with description on the card using openprops.css -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script>dayjs().format()</script>
+</body>
+
 </html>
