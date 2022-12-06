@@ -57,10 +57,10 @@ function DisplayCardName(cardName)
     document.getElementById("cardName").innerHTML = cardName;
 }
 
-function DisplayCard(imgVar)
+function DisplayCard(imgID)
 {
     var img = document.createElement("img");
-    img.src = "./assets/json/cards/" + imgVar;
+    img.src = "./assets/json/cards/" + imgID;
     var src = document.getElementById("cardPlace");
     src.appendChild(img);
 }
