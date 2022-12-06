@@ -42,6 +42,22 @@ header table
   margin: 0 auto;
 }
 
+#cardPlace {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0 auto;
+}
+
+.reveal-fortune {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+
 #content-wrapper 
 {
   min-height: 100%;
