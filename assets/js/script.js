@@ -1,32 +1,50 @@
-const history = ["currentDay", "-1", "-2", "-3", "-4", "-5"]; //Find a way to store this as persisitent data
+//Variables
+const history = ["", "-1", "-2", "-3", "-4", "-5"]; //Find a way to store this as persisitent data
 const tarotData = (src="./assets/json/tarot-images.json");
 
-//pick a random number from 0 to 78
-var chosenCardNumber = (Math.floor(Math.random() * (78 - 0)));
-
-// button function, when button click it does what?
-document.getElementById("button").addEventListener("click", function()
+//Hide button if user has already had their daily fortune read and display previous fortune instead
+if (history[0] != "")
 {
-    //Hide Button
+    //Hide button
 
-    //Get card information
-    fetch (tarotData)
-    .then((response) => response.json())
-    .then((data) =>
+    //Tell user we have already read thier fortune today and to come back tommorow
+
+    //Display todays fortune
+    DisplayCard(history[0]);
+
+    //Display card description
+
+    console.log("Already Have Done Daily Reading");
+}
+else
+{
+    //pick a random number from 0 to 78
+    var chosenCardNumber = (Math.floor(Math.random() * (78 - 0)));
+
+    //Button function, when read tarot button click it does what?
+    document.getElementById("button").addEventListener("click", function()
     {
-        console.log(data.cards[chosenCardNumber].name);
-        console.log(data.cards[chosenCardNumber].img);
-        console.log(data.cards[chosenCardNumber].fortune_telling[0]);
+        //Hide Button On press
 
-        //Display card img
-        DisplayCard(data.cards[chosenCardNumber].img);
+        //Get card information
+        fetch (tarotData)
+        .then((response) => response.json())
+        .then((data) =>
+        {
+            console.log(data.cards[chosenCardNumber].name);
+            console.log(data.cards[chosenCardNumber].img);
+            console.log(data.cards[chosenCardNumber].fortune_telling[0]);
 
-        //Display card fortune description
+            //Display card img
+            DisplayCard(data.cards[chosenCardNumber].img);
 
-        //Store card data as persistent data
-        StoreData(chosenCardNumber);
-    });
-})
+            //Display card fortune description
+
+            //Store card data as persistent data
+            StoreData(chosenCardNumber);
+        });
+    })
+}
 
 function DisplayCard(imgVar)
 {
