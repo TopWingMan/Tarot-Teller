@@ -1,36 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">   
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Daily Tarot</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    <style> body{font-family: 'Almendra', serif!important;}</style>
 
-    <body>
-        <div class="imageContainer">
-          <a id="imageLink" href="#">
-            <img alt="" id="unsplashImage" />
-            </a>
+    <!-- add the openprops.css link for the cards card -->
+  </head>
+  <body>
+
+    <header class="mui-appbar mui--z3">
+        <div class="mui-container-fluid mui--text-display2 mui-col-md-8">
+          <tr class="mui--appbar-height" > 
+            <td class="mui--text-title">Your TarotTeller</td>
+          </tr>
         </div>
+    </header>
+<!--Unsplash API Background   
+    <script>
+        let endpoint = 'https://api.unsplash.com/photos/random?client_id=-PsGgCr_6114rpC-glgFju9W7lxLkk2TbaixNnIp8gc';
 
-        <script>
-            clientID = '-PsGgCr_6114rpC-glgFju9W7lxLkk2TbaixNnIp8gc'
-            let endpoint = 'https://api.unsplash.com/photos/random?client_id=-PsGgCr_6114rpC-glgFju9W7lxLkk2TbaixNnIp8gc';
+        let imageElement = document.querySelector ("#unsplashImage");
 
-            let imageElement = document.querySelector ("#unsplashImage");
+        fetch(endpoint)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonData) {
+            imageElement.src = jsonData.urls.regular;
+        })
+    </script> -->
+<br>
+<br>
+<div class="mui--text-display3 row wow zoomInDown mui--text-center">Your Daily Tarot Reading</div>
+<br>
+<br>
+<div id="cardPlace"></div>
+<div class="select-card">
+<button class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary" id="button"><b>Reveal Your Fortune...</b></button>
+</div>
+<br>
+<br>
 
-            fetch(endpoint)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (jsonData) {
-                imageElement.src = jsonData.urls.regular;
-            })
-        </script>
-        
-    
+<div id="cardName"></div>
+<div id="cardPlace"></div>
+<div id="cardDescription"></div>
 
-    </body>
+<br>
+<br>
+
+<!-- add a card with the image with description on the card using openprops.css -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+  </body>
 </html>
