@@ -48,7 +48,7 @@ header table
   margin: 0 auto;
 }
 
-#cardPlace, #cardName, #cardDescription {
+#cardPlace, #cardName, #cardDescription, #comeBackTommorow {
   display: flex;
   justify-content: center;
   align-items:center;
