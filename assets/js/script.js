@@ -76,3 +76,36 @@ function StoreData(StoreData)
 }
 
 // gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!
+
+function SiteVisit() {
+    if (typeof Storage !== "undefined") {
+      // Code for localStorage/sessionStorage.
+      console.log("storage available")
+
+
+    } else {
+      // Sorry! No Web Storage support..
+      console.log("storage NOT available");
+    }
+    localStorage.setItem("myCat", "Tom");
+}
+
+SiteVisit();
+
+function setToStorage(storKey, storValue) {
+    localStorage.setItem(storKey,storValue)
+}
+
+
+
+function getClickTime () {
+//   dayjs().hour(); // gets current hour
+    // newDate = dayjs().hour(12); // returns new dayjs object
+    var now = dayjs();
+    console.log(now);
+    var day = dayjs().day();
+    console.log(day);
+    var a = dayjs("2022-01-01");
+    console.log(dayjs("2020-01-01").from(a));
+}
+getClickTime();
