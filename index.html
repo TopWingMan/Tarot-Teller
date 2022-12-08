@@ -15,7 +15,14 @@
     <!-- add the openprops.css link for the cards card -->
   </head>
   <body>
-
+    <style>
+      body {
+        background-image: url(./assets/.jpeg/moon-phases-matte.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
     <header class="mui-appbar mui--z3">
         <div class="mui-container-fluid mui--text-display2 mui-col-md-8">
           <tr class="mui--appbar-height" > 
@@ -23,20 +30,7 @@
           </tr>
         </div>
     </header>
-<!--Unsplash API Background   
-    <script>
-        let endpoint = 'https://api.unsplash.com/photos/random?client_id=-PsGgCr_6114rpC-glgFju9W7lxLkk2TbaixNnIp8gc';
 
-        let imageElement = document.querySelector ("#unsplashImage");
-
-        fetch(endpoint)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonData) {
-            imageElement.src = jsonData.urls.regular;
-        })
-    </script> -->
 <br>
 <br>
 <div class="mui--text-display3 row wow zoomInDown mui--text-center">Your Daily Tarot Reading</div>
