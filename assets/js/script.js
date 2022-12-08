@@ -2,7 +2,34 @@
 const history = ["", "-1", "-2", "-3", "-4", "-5"]; //Find a way to store this as persisitent data
 const tarotData = (src = "./assets/json/tarot-images.json");
 const siteVisited = localStorage.getItem("lastClick");
-// const hasItBeen24Hours = 
+
+
+function hasItBeen24Hours() {
+  // if it is null equals it has not been 24 hours
+  if (!siteVisited) {
+    console.log("hasItBeen24Hours = " + siteVisited);
+    const clickAway = true;
+    console.log("clickAway if = " + clickAway);
+    return clickAway;
+  } else {
+    // get lastClick
+    var lc = dayjs(localStorage.getItem("lastClick"));
+    console.log("lc = " + lc);
+    // get next click
+    var nc = dayjs(localStorage.getItem("lastClickPlusOneDay"));
+    console.log("nc = " + nc);
+    // compare last click to next day
+    var lcnc = nc.isAfter(lc);
+    console.log("lcnc = " + lcnc);
+    const clickAway = true;
+    console.log("clickAway else = " + clickAway);
+    return clickAway;
+    // console.log("hasItBeen24Hours" + siteVisited);
+    // return siteVisited;
+    // do something
+  }
+}
+hasItBeen24Hours();
 
 //Check if 24 hrs has passed since last reading
 if(currenttime = lastClickPlusOneDayObj)
