@@ -304,8 +304,6 @@
       "suit": "Trump",
       "img": "m07.jpg",
 	  "fortune_telling": [
-                "Victory is a certainty", 
-                "Move ahead with all plans", 
                 "Beware the jealousy of others"
             ], 
             "keywords": [
@@ -423,9 +421,7 @@
       "suit": "Trump",
       "img": "m10.jpg",
 	  "fortune_telling": [
-                "Some events are in the hands of heaven", 
-                "You've lived through this before", 
-                "What happened then?"
+                "Trust your luck"
             ], 
             "keywords": [
                 "luck", 
@@ -505,7 +501,6 @@
       "suit": "Trump",
       "img": "m12.jpg",
 	  "fortune_telling": [
-                "A traitor is revealed", 
                 "One of your friends is working against you", 
                 "Change your ways or suffer the consequences"
             ], 
@@ -546,7 +541,6 @@
       "suit": "Trump",
       "img": "m13.jpg",
 	  "fortune_telling": [
-                "A relationship or illness ends suddenly", 
                 "Limit travel and risk-taking", 
                 "General gloom and doom"
             ], 
@@ -587,7 +581,6 @@
       "suit": "Trump",
       "img": "m14.jpg",
 	  "fortune_telling": [
-                "Someone's using drugs or alcohol to excess", 
                 "It's time to get back on that diet"
             ], 
             "keywords": [
@@ -630,7 +623,6 @@
       "suit": "Trump",
       "img": "m15.jpg",
 	  "fortune_telling": [
-                "Adultery and unfaithfulness", 
                 "A string of extremely bad luck is coming your way", 
                 "Beware evil influences and wolves in sheep's clothing"
             ], 
@@ -672,7 +664,6 @@
       "suit": "Trump",
       "img": "m16.jpg",
 	  "fortune_telling": [
-                "Impending disaster", 
                 "Cancel plans and reverse decisions", 
                 "Someone wants to take you down a notch or two", 
                 "Don't hold back; say what you really mean"
