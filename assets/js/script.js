@@ -96,9 +96,4 @@ function DisplaycomeBackTommorow()
   document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading! <br> Please visit again after 24 hours!";
 }
 
-function StoreData(StoreData) 
-{
-  history[0] = StoreData;
-  localStorage.setItem("dateOfLastReading", dayjs().minute());
-  localStorage.setItem("history", history[0]);
-}
+// gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!
