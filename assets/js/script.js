@@ -7,6 +7,8 @@ if (localStorage.getItem("history") != undefined)
     history[0] = localStorage.getItem("history");
 }
 
+//delete this
+
 //Check if 24 hrs has passed since last reading
 if(dayjs().minute() > localStorage.getItem("dateOfLastReading"))
 {
