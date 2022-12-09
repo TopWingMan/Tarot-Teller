@@ -1,78 +1,99 @@
 //Variables
-const history = ["", "-1", "-2", "-3", "-4", "-5"]; //Find a way to store this as persisitent data
-const tarotData = (src="./assets/json/tarot-images.json");
+var history = ["", "", "", "", "", ""];
+const tarotData = (src = "./assets/json/tarot-images.json");
+
+if (localStorage.getItem("history") != undefined)
+{
+    history[0] = localStorage.getItem("history");
+}
+
+//Check if 24 hrs has passed since last reading
+if(dayjs().minute() > localStorage.getItem("dateOfLastReading"))
+{
+    //push every value in history up one
+    for(i = 1; i < 5; i++)
+    {
+        history[i] = history[i - 1];
+    }
+    //make today's reading = nothing;
+    history[0] = undefined;
+}
 
 //Hide button if user has already had their daily fortune read and display previous fortune instead
-if (history[0] != "")
+if (history[0] != undefined)
 {
-    //Hide button
+  //Hide button
+  document.getElementById("button").style.display = "none";
+
+  fetch(tarotData)
+      .then((response) => response.json())
+      .then((data) =>
+      {
+        //Display card name
+        DisplayCardName(data.cards[history[0]].name);
+
+        //Display card img
+        DisplayCard(data.cards[history[0]].img);
+
+        //Display card fortune description
+        DisplayCardDescription(data.cards[history[0]].fortune_telling[0]);
+
+        //Tell user we have already read their fortune today and to come back tommorow
+        DisplaycomeBackTommorow();
+      });
+} 
+else 
+{
+  //pick a random number from 0 to 78
+  var chosenCardNumber = Math.floor(Math.random() * (78 - 0));
+
+  //Button function, when read tarot button click it does what?
+  document.getElementById("button").addEventListener("click", function () 
+  {
+    //Hide Button On press
     document.getElementById("button").style.display = "none";
 
-    //Tell user we have already read their fortune today and to come back tommorow
+    //Get card information
+    fetch(tarotData)
+      .then((response) => response.json())
+      .then((data) => 
+      {
+        //Display card name
+        DisplayCardName(data.cards[chosenCardNumber].name);
 
-    //Display card name
-    DisplayCardName(history[0]);
+        //Display card img
+        DisplayCard(data.cards[chosenCardNumber].img);
 
-    //Display todays fortune
-    DisplayCard(history[0]);
+        //Display card fortune description
+        DisplayCardDescription(data.cards[chosenCardNumber].fortune_telling[0]);
 
-    //Display card description
-    DisplayCardDescription(history[0]);
-
-    console.log("Already Have Done Daily Reading");
-}
-else
-{
-    //pick a random number from 0 to 78
-    var chosenCardNumber = (Math.floor(Math.random() * (78 - 0)));
-
-    //Button function, when read tarot button click it does what?
-    document.getElementById("button").addEventListener("click", function()
-    {
-        //Hide Button On press
-        document.getElementById("button").style.display = "none";
-
-        //Get card information
-        fetch (tarotData)
-        .then((response) => response.json())
-        .then((data) =>
-        {
-            //Display card name
-            DisplayCardName(data.cards[chosenCardNumber].name);
-
-            //Display card img
-            DisplayCard(data.cards[chosenCardNumber].img);
-
-            //Display card fortune description
-            DisplayCardDescription(data.cards[chosenCardNumber].fortune_telling[0]);
-
-            //Store card data as persistent data
-            StoreData(chosenCardNumber);
-        });
-    })
+        //Store card data as persistent data
+        StoreData(chosenCardNumber);
+      });
+  });
 }
 
-function DisplayCardName(cardName)
+function DisplayCardName(cardName) 
 {
-    document.getElementById("cardName").innerHTML = cardName;
+  document.getElementById("cardName").innerHTML = cardName;
 }
 
-function DisplayCard(imgVar)
+function DisplayCard(imgID) 
 {
-    var img = document.createElement("img");
-    img.src = "./assets/json/cards/" + imgVar;
-    var src = document.getElementById("cardPlace");
-    src.appendChild(img);
+  var img = document.createElement("img");
+  img.src = "./assets/json/cards/" + imgID;
+  var src = document.getElementById("cardPlace");
+  src.appendChild(img);
 }
 
-function DisplayCardDescription(cardDescription)
+function DisplayCardDescription(cardDescription) 
 {
-    document.getElementById("cardDescription").innerHTML = cardDescription;
+  document.getElementById("cardDescription").innerHTML = cardDescription;
 }
 
-function StoreData(StoreData)
+function DisplaycomeBackTommorow() 
 {
-    history[0] = StoreData;
+  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading! <br> Please visit again after 24 hours!";
 }
 
 // gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!

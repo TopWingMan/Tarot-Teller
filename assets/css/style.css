@@ -11,14 +11,20 @@ html, body, input, textarea, button
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-/* header 
+body
 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-} */
+  display: flex;
+  flex-direction: column;
+}
+
+header
+{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  width: 100%;
+}
 
 header ul.mui-list--inline 
 {
@@ -40,6 +46,21 @@ header table
   flex-direction: row;
   justify-content: center;
   align-items: center; 
+  margin: 0 auto;
+}
+
+#cardPlace, #cardName, #cardDescription, #comeBackTommorow {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+.reveal-fortune {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
