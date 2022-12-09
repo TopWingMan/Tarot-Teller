@@ -1,4 +1,4 @@
-# Project1
+# Tarot Teller
 ## Team Members
 - Helen Evans - https://github.com/HelenLEvans
 - Zachary Stanaford - https://github.com/TopWingMan
