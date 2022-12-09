@@ -7,10 +7,8 @@ if (localStorage.getItem("history") != undefined)
     history[0] = localStorage.getItem("history");
 }
 
-//delete this
-
 //Check if 24 hrs has passed since last reading
-if(dayjs().minute() > localStorage.getItem("dateOfLastReading"))
+if(dayjs().day() > localStorage.getItem("dateOfLastReading"))
 {
     //push every value in history up one
     for(i = 1; i < 5; i++)
@@ -95,7 +93,12 @@ function DisplayCardDescription(cardDescription)
 
 function DisplaycomeBackTommorow() 
 {
-  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading! <br> Please visit again after 24 hours!";
+  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading!  Please visit again after 24 hours!";
 }
 
-// gets random choice from array returned from jason if last visit was more than 24 hours ago, else display the last result and say come back tommorow!
+function StoreData(StoreData) 
+{
+  history[0] = StoreData;
+  localStorage.setItem("dateOfLastReading", dayjs().day());
+  localStorage.setItem("history", history[0]);
+}
