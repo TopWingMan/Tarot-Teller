@@ -3,7 +3,6 @@ html, body
   height: 100vh;
 }
 
-
 html, body, input, textarea, button 
 {
   -webkit-font-smoothing: antialiased;
@@ -80,4 +79,3 @@ footer
   border-top: 1px solid #e0e0e0;
   padding-top: 35px;
 }
-
