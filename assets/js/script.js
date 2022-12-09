@@ -93,7 +93,7 @@ function DisplayCardDescription(cardDescription)
 
 function DisplaycomeBackTommorow() 
 {
-  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading!  Please visit again after 24 hours!";
+  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading! <br> Please visit again after 24 hours!";
 }
 
 function StoreData(StoreData) 
