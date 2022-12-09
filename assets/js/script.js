@@ -8,7 +8,7 @@ if (localStorage.getItem("history") != undefined)
 }
 
 //Check if 24 hrs has passed since last reading
-if(dayjs().day() > localStorage.getItem("dateOfLastReading"))
+if(dayjs().minute() > localStorage.getItem("dateOfLastReading"))
 {
     //push every value in history up one
     for(i = 1; i < 5; i++)
@@ -93,12 +93,12 @@ function DisplayCardDescription(cardDescription)
 
 function DisplaycomeBackTommorow() 
 {
-  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading!  Please visit again after 24 hours!";
+  document.getElementById("comeBackTommorow").innerHTML = "You have already received todays reading! <br> Please visit again after 24 hours!";
 }
 
 function StoreData(StoreData) 
 {
   history[0] = StoreData;
-  localStorage.setItem("dateOfLastReading", dayjs().day());
+  localStorage.setItem("dateOfLastReading", dayjs().minute());
   localStorage.setItem("history", history[0]);
 }
