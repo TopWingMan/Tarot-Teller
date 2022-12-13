@@ -28,43 +28,66 @@
       dayjs.extend(window.dayjs_plugin_relativeTime);
     </script>
     <style>
-      body { 
+      body {
         font-family: "Almendra", serif !important;
+        background-image: url("./blue-cards.jpg");
       }
     </style>
   </head>
   <body>
-    <header class="mui-appbar mui--z3" style="background-color:#546E7A; background: linear-gradient(to top, rgba(106,133,182,0.95), rgba(135,167,222,0.95));">
+    <header
+      class="mui-appbar mui--z3"
+      style="
+        background-color: #546e7a;
+        background: linear-gradient(
+          to top,
+          rgba(106, 133, 182, 0.95),
+          rgba(135, 167, 222, 0.95)
+        );
+      "
+    >
       <div class="mui--appbar-height mui--text-light">
-        <h1 class="mui--text-display3 row wow zoomInDown mui--text-center" style=" margin-top: 0.2rem;">
+        <h1
+          class="mui--text-display3 row wow zoomInDown mui--text-center"
+          style="margin-top: 0.2rem"
+        >
           Your TarotTeller
         </h1>
       </div>
     </header>
-
-    <div
-      class="mui--text-display3 row wow zoomInDown mui--text-center"
-      style="margin-top: 3.2rem"
-    >
-      Your Daily Tarot Reading
-    </div>
-
-    <div id="cardName"></div>
-    <div id="cardPlace"></div>
-    <div id="cardDescription"></div>
-
-    <div class="select-card">
-      <button
-        class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary"  style="background-color:#546E7A; background: linear-gradient(to top, rgba(106,133,182,0.99), rgba(135,167,222,0.99));"
-        id="button"
+    <main>
+      <div
+        class="mui--text-display3 row wow zoomInDown mui--text-center"
+        style="margin-top: 3.2rem"
       >
-        <b>Reveal Your Fortune...</b>
-      </button>
-    </div>
-    <div id="cardName"></div>
-    <div id="cardPlace"></div>
-    <div id="cardDescription"></div>
-    <div id="comeBackTommorow" style=" text-align: center; color: red;"></div>
+        Your Daily Tarot Reading
+      </div>
+
+      <div id="cardName"></div>
+      <div id="cardPlace"></div>
+      <div id="cardDescription"></div>
+
+      <div class="select-card">
+        <button
+          class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary"
+          style="
+            background-color: #546e7a;
+            background: linear-gradient(
+              to top,
+              rgba(106, 133, 182, 0.99),
+              rgba(135, 167, 222, 0.99)
+            );
+          "
+          id="button"
+        >
+          <b>Reveal Your Fortune...</b>
+        </button>
+      </div>
+      <div id="cardName"></div>
+      <div id="cardPlace"></div>
+      <div id="cardDescription"></div>
+      <div id="comeBackTommorow" style="text-align: center; color: red"></div>
+    </main>
 
     <script src="./assets/js/script.js"></script>
   </body>
