@@ -66,3 +66,7 @@ footer
   padding-top: 35px;
 }
 
+main{
+  background-color: rgba(255,255,255,0.5);
+  height: 100vh;
+}
