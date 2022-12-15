@@ -1,10 +1,13 @@
 @import "bower_components/mui/src/sass/mui/colors";
 
-
+*{
+  
+}
 html, body 
 {
   display: flex;
   height: 100vh;
+  
 }
 
 html, body, input, textarea, button 
