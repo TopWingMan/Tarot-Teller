@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/cs/style.css"/>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
       integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
@@ -30,7 +30,7 @@
     <style>
       body {
         font-family: "Almendra", serif !important;
-        background-image: url("./blue-cards.jpg");
+        background-image: url("/assets/Images/blue-cards.jpg");
         background-size: cover;
       }
     </style>
@@ -38,7 +38,7 @@
 
   <body>
     <header
-      class="mui-appbar mui--z3"
+      class="mui-appbar mui--z4"
       style="
         background: linear-gradient(
           to bottom,
@@ -51,7 +51,7 @@
         <h1
           class="mui--text-display3 row wow zoomInDown mui--text-center"
           style="
-            margin-top: 0.6rem;
+            margin-top: 0rem;
             -webkit-text-stroke: 0.6px;
             -webkit-text-stroke-color: black;
           "
@@ -80,7 +80,7 @@
           align-items: center;
           max-width: 44rem;
           margin: 0 auto;
-          margin-top: 3rem;
+          margin-top: 2rem;
           padding: 0.5rem 0;
           -webkit-text-stroke: 0.4px;
           -webkit-text-stroke-color: black;
@@ -115,12 +115,20 @@
           box-shadow: 0 1rem 3.4rem 0 black;
         "
       ></div>
-      <div id="cardPlace"></div>
+      <div id="cardPlace" style="  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 44rem;
+      margin: 0 auto;
+      margin-top: 1.1rem;
+      padding: 0.5rem 0;"></div>
 
       <div
         id="cardDescription"
         style="
           padding: 1rem;
+          font-size: x-large;
           color: white;
           border: none solid;
           border-radius: 2.56rem;
@@ -144,8 +152,26 @@
       ></div>
 
       <div class="select-card">
-        <button
-          class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary"
+        <button style="
+        
+        margin-top: 3.2rem;
+        color: white;
+        border: none solid;
+        border-radius: 1rem;
+        background: linear-gradient(
+          to top,
+          rgba(89, 112, 158, 0.99),
+          rgba(89, 112, 158, 0.992)
+        );
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 2rem 0;"
+          class="mui-btn mui-btn--raised mui-btn--large mui-btn"
           id="button"
         >
           <b>Reveal Your Fortune...</b>
@@ -158,6 +184,7 @@
         id="comeBackTommorow"
         style="
           text-align: center;
+          font-size: x-large;
           color: white;
           border: none solid;
           border-radius: 1rem;
@@ -172,7 +199,7 @@
           align-items: center;
           max-width: 58rem;
           margin: 0 auto;
-          margin-top: 0.1rem;
+          margin-top: 1rem;
           padding: 1rem;
           box-shadow: 0 1rem 7rem 0 black;
         "

@@ -1,6 +1,9 @@
-html, body
+
+html, body 
 {
+  display: flex;
   height: 100vh;
+  
 }
 
 html, body, input, textarea, button 
@@ -10,19 +13,19 @@ html, body, input, textarea, button
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-body
+header 
 {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: #5c80c1;
+  background: -webkit-linear-gradient(to top, rgba(92,128,193,0.45), rgba(150,180,232,0.45));
 }
 
-header
-{
-  text-align: center;
+#button{
   align-items: center;
-  justify-content: center;
-  margin: 0px;
-  width: 100%;
 }
 
 header ul.mui-list--inline 
@@ -40,29 +43,6 @@ header table
   width: 100%;
 }
 
-.select-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-  margin: 0 auto;
-}
-
-#cardPlace, #cardName, #cardDescription, #comeBackTommorow {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  margin-top: 10px;
-  font-size: x-large;
-}
-
-.reveal-fortune {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
 #content-wrapper 
 {
   min-height: 100%;
@@ -71,6 +51,11 @@ header table
   padding-bottom: 100px;
 }
 
+#comeBackTommorow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 footer 
 {
   box-sizing: border-box;
@@ -78,7 +63,8 @@ footer
   background-color: #eee;
   border-top: 1px solid #e0e0e0;
   padding-top: 35px;
-  
+}
+
 main{
   background-color: rgba(255,255,255,0.5);
   height: 100vh;
