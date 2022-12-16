@@ -1,211 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarot Teller</title>
-    <link
-      href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="./assets/cs/style.css"/>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
-      integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/plugin/relativeTime.min.js"></script>
-    <script>
-      dayjs.extend(window.dayjs_plugin_relativeTime);
-    </script>
-    <style>
-      body {
-        font-family: "Almendra", serif !important;
-        background-image: url("/assets/Images/blue-cards.jpg");
-        background-size: cover;
-      }
-    </style>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Tarot Teller" />
+		<meta name="keywords" content="HTML, CSS, JavaScript, API, JSON" />
+		<meta name="authors" content="Created by: Helen Evans - github.com/HelenLEvans , Zachary Stanaford - github.com/TopWingMan , AP - github.com/aashpaash , Steven Nunez - github.com/SteveeZee03 , Chris Ridder - github.com/cridder" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tarot Teller</title>
+		<!-- load css stylesheet -->
+		<link
+			href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css"
+			rel="stylesheet"
+			type="text/css" />
+		<!-- load fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet" />
+		<!-- load css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./assets/cs/style.css" />
+		<!-- load js -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
+			integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/plugin/relativeTime.min.js"></script>
+		<script>
+			dayjs.extend(window.dayjs_plugin_relativeTime);
+		</script>
+		<!-- define css for body -->
+		<style>
+			body {
+				font-family: "Almendra", serif !important;
+				background-image: url("/assets/Images/blue-cards.jpg");
+				background-size: cover;
+			}
+		</style>
+	</head>
 
-  <body>
-    <header
-      class="mui-appbar mui--z4"
-      style="
-        background: linear-gradient(
-          to bottom,
-          rgba(89, 112, 158, 0.99),
-          rgba(89, 112, 158, 0.992)
-        );
-      "
-    >
-      <div class="mui--appbar-height mui--text-light">
-        <h1
-          class="mui--text-display3 row wow zoomInDown mui--text-center"
-          style="
-            margin-top: 0rem;
-            -webkit-text-stroke: 0.6px;
-            -webkit-text-stroke-color: black;
-          "
-        >
-          Your TarotTeller
-        </h1>
-      </div>
-    </header>
+	<body>
+		<header
+			class="mui-appbar mui--z4"
+			style="
+				background: linear-gradient(
+					to bottom,
+					rgba(89, 112, 158, 0.99),
+					rgba(89, 112, 158, 0.992)
+				);
+			">
+			<div class="mui--appbar-height mui--text-light">
+				<h1
+					class="mui--text-display3 row wow zoomInDown mui--text-center"
+					style="
+						margin-top: 0rem;
+						-webkit-text-stroke: 0.6px;
+						-webkit-text-stroke-color: black;
+					">
+					Your TarotTeller
+				</h1>
+			</div>
+		</header>
 
-    <main>
-      <div
-        class="mui--text-display3 row wow zoomInDown mui--text-center"
-        style="
-          margin-top: 3.2rem;
-          color: white;
-          border: none solid;
-          border-radius: 1rem;
-          background: linear-gradient(
-            to top,
-            rgba(128, 152, 200, 0.99),
-            rgba(128, 152, 200, 0.99)
-          );
+		<main>
+			<div
+				class="mui--text-display3 row wow zoomInDown mui--text-center"
+				style="
+					margin-top: 3.2rem;
+					color: white;
+					border: none solid;
+					border-radius: 1rem;
+					background: linear-gradient(
+						to top,
+						rgba(128, 152, 200, 0.99),
+						rgba(128, 152, 200, 0.99)
+					);
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          max-width: 44rem;
-          margin: 0 auto;
-          margin-top: 2rem;
-          padding: 0.5rem 0;
-          -webkit-text-stroke: 0.4px;
-          -webkit-text-stroke-color: black;
-          box-shadow: 0 0.5rem 3.3rem 0 black;
-        "
-      >
-        Your Daily Tarot Reading
-      </div>
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 44rem;
+					margin: 0 auto;
+					margin-top: 2rem;
+					padding: 0.5rem 0;
+					-webkit-text-stroke: 0.4px;
+					-webkit-text-stroke-color: black;
+					box-shadow: 0 0.5rem 3.3rem 0 black;
+				">
+				Your Daily Tarot Reading
+			</div>
 
-      <div
-        id="cardName"
-        style="
-          padding: 0.2rem;
-          color: white;
-          font-size: 2.6rem;
-          -webkit-text-stroke: 0.385px;
-          -webkit-text-stroke-color: black;
-          border: none solid;
-          border-radius: 2.56rem;
-          background: linear-gradient(
-            to bottom,
-            rgba(128, 152, 200, 0.99),
-            rgba(136, 160, 195, 0.98)
-          );
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          max-width: 28rem;
-          margin: 0 auto;
-          margin-top: 1.5rem;
-          margin-bottom: 1.2rem;
-          box-shadow: 0 1rem 3.4rem 0 black;
-        "
-      ></div>
-      <div id="cardPlace" style="  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 44rem;
-      margin: 0 auto;
-      margin-top: 1.1rem;
-      padding: 0.5rem 0;"></div>
+			<div
+				id="cardName"
+				style="
+					padding: 0.2rem;
+					color: white;
+					font-size: 2.6rem;
+					-webkit-text-stroke: 0.385px;
+					-webkit-text-stroke-color: black;
+					border: none solid;
+					border-radius: 2.56rem;
+					background: linear-gradient(
+						to bottom,
+						rgba(128, 152, 200, 0.99),
+						rgba(136, 160, 195, 0.98)
+					);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 28rem;
+					margin: 0 auto;
+					margin-top: 1.5rem;
+					margin-bottom: 1.2rem;
+					box-shadow: 0 1rem 3.4rem 0 black;
+				"></div>
+			<div
+				id="cardPlace"
+				style="
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					max-width: 44rem;
+					margin: 0 auto;
+					margin-top: 1.1rem;
+					padding: 0.5rem 0;
+				"></div>
 
-      <div
-        id="cardDescription"
-        style="
-          padding: 1rem;
-          font-size: x-large;
-          color: white;
-          border: none solid;
-          border-radius: 2.56rem;
-          -webkit-text-stroke: 0.12px;
-          -webkit-text-stroke-color: black;
-          background: linear-gradient(
-            to bottom,
-            rgba(136, 160, 195, 0.99),
-            rgba(128, 152, 200, 0.98)
-          );
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          max-width: 45rem;
-          margin: 0 auto;
-          margin-top: 1.3rem;
-          padding: 1rem;
-          box-shadow: 0 1rem 7rem 0 black;
-        "
-      ></div>
+			<div
+				id="cardDescription"
+				style="
+					padding: 1rem;
+					font-size: x-large;
+					color: white;
+					border: none solid;
+					border-radius: 2.56rem;
+					-webkit-text-stroke: 0.12px;
+					-webkit-text-stroke-color: black;
+					background: linear-gradient(
+						to bottom,
+						rgba(136, 160, 195, 0.99),
+						rgba(128, 152, 200, 0.98)
+					);
+					display: flex;
+					text-align: center;
+					justify-content: center;
+					align-items: center;
+					max-width: 45rem;
+					margin: 0 auto;
+					margin-top: 1.3rem;
+					padding: 1rem;
+					box-shadow: 0 1rem 7rem 0 black;
+				"></div>
 
-      <div class="select-card">
-        <button style="
-        
-        margin-top: 3.2rem;
-        color: white;
-        border: none solid;
-        border-radius: 1rem;
-        background: linear-gradient(
-          to top,
-          rgba(89, 112, 158, 0.99),
-          rgba(89, 112, 158, 0.992)
-        );
+			<div class="select-card">
+				<button
+					style="
+						margin-top: 3.2rem;
+						color: white;
+						border: none solid;
+						border-radius: 1rem;
+						background: linear-gradient(
+							to top,
+							rgba(89, 112, 158, 0.99),
+							rgba(89, 112, 158, 0.992)
+						);
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 50rem;
-        margin: 0 auto;
-        margin-top: 2rem;
-        padding: 2rem 0;"
-          class="mui-btn mui-btn--raised mui-btn--large mui-btn"
-          id="button"
-        >
-          <b>Reveal Your Fortune...</b>
-        </button>
-      </div>
-      <div id="cardName"></div>
-      <div id="cardPlace"></div>
-      <div id="cardDescription"></div>
-      <div
-        id="comeBackTommorow"
-        style="
-          text-align: center;
-          font-size: x-large;
-          color: white;
-          border: none solid;
-          border-radius: 1rem;
-          background: linear-gradient(
-            to bottom,
-            rgba(115, 138, 185, 0.99),
-            rgba(115, 138, 185, 0.99)
-          );
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          max-width: 58rem;
-          margin: 0 auto;
-          margin-top: 1rem;
-          padding: 1rem;
-          box-shadow: 0 1rem 7rem 0 black;
-        "
-      ></div>
-    </main>
-
-    <script src="./assets/js/script.js"></script>
-  </body>
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						max-width: 50rem;
+						margin: 0 auto;
+						margin-top: 2rem;
+						padding: 2rem 0;
+					"
+					class="mui-btn mui-btn--raised mui-btn--large mui-btn"
+					id="button">
+					<b>Reveal Your Fortune...</b>
+				</button>
+			</div>
+			<div id="cardName"></div>
+			<div id="cardPlace"></div>
+			<div id="cardDescription"></div>
+			<div
+				id="comeBackTommorow"
+				style="
+					text-align: center;
+					font-size: x-large;
+					color: white;
+					border: none solid;
+					border-radius: 1rem;
+					background: linear-gradient(
+						to bottom,
+						rgba(115, 138, 185, 0.99),
+						rgba(115, 138, 185, 0.99)
+					);
+					display: flex;
+					text-align: center;
+					justify-content: center;
+					align-items: center;
+					max-width: 58rem;
+					margin: 0 auto;
+					margin-top: 1rem;
+					padding: 1rem;
+					box-shadow: 0 1rem 7rem 0 black;
+				"></div>
+		</main>
+		<!-- load js -->
+		<script src="./assets/js/script.js"></script>
+	</body>
 </html>
