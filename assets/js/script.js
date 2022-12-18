@@ -84,7 +84,7 @@ function DisplayCard(imgID)
   img.src = "./assets/json/cards/" + imgID;
   var src = document.getElementById("cardPlace");
   src.appendChild(img);
-}
+}//w
 
 function DisplayCardDescription(cardDescription) 
 {
