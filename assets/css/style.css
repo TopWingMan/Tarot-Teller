@@ -1,0 +1,79 @@
+/* 
+Created by:  
+Helen Evans - https://github.com/HelenLEvans
+Zachary Stanaford - https://github.com/TopWingMan
+AP - https://github.com/aashpaash-
+Steven Nunez - https://github.com/SteveeZee03
+Chris Ridder - https://github.com/cridder
+*/
+
+html, body 
+{
+  display: flex;
+  height: 100vh;
+  
+}
+
+html, body, input, textarea, button 
+{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+header 
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: #5c80c1;
+  background: -webkit-linear-gradient(to top, rgba(92,128,193,0.45), rgba(150,180,232,0.45));
+}
+
+#button{
+  align-items: center;
+}
+
+header ul.mui-list--inline 
+{
+  margin-bottom: 0;
+}
+
+header a 
+{
+  color: #fff;
+}
+
+header table 
+{
+  width: 100%;
+}
+
+#content-wrapper 
+{
+  min-height: 100%;
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+#comeBackTommorow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer 
+{
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 35px;
+}
+
+main{
+  background-color: rgba(255,255,255,0.5);
+  height: 100vh;
+}
