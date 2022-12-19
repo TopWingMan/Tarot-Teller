@@ -77,15 +77,6 @@ function DisplayCardName(cardName) {
 	document.getElementById("cardName").innerHTML = cardName;
 }
 
-
-function DisplayCard(imgID) 
-{
-  var img = document.createElement("img");
-  img.src = "./assets/json/cards/" + imgID;
-  var src = document.getElementById("cardPlace");
-  src.appendChild(img);
-}//w
-
 // function to display html element
 function DisplayCard(imgID) {
 	var img = document.createElement("img");
@@ -93,7 +84,6 @@ function DisplayCard(imgID) {
 	var src = document.getElementById("cardPlace");
 	src.appendChild(img);
 }
-
 
 // function to display html element
 function DisplayCardDescription(cardDescription) {
