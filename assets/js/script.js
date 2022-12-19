@@ -75,6 +75,7 @@ if (history[0] != undefined) {
 // function to display html element
 function DisplayCardName(cardName) {
 	document.getElementById("cardName").innerHTML = cardName;
+	document.getElementById("cardName").setAttribute("style", "padding: 0.2rem;color: white;font-size: 2.6rem;-webkit-text-stroke: 0.385px;-webkit-text-stroke-color: black;border: none solid;border-radius: 2.56rem;background: linear-gradient(to bottom,rgba(128, 152, 200, 0.99),rgba(136, 160, 195, 0.98));display: flex; justify-content: center; align-items: center; max-width: 28rem; margin: 0 auto; margin-top: 1.5rem; margin-bottom: 1.2rem; box-shadow: 0 1rem 3.4rem 0 black;")
 }
 
 // function to display html element
@@ -88,12 +89,14 @@ function DisplayCard(imgID) {
 // function to display html element
 function DisplayCardDescription(cardDescription) {
 	document.getElementById("cardDescription").innerHTML = cardDescription;
+	document.getElementById("cardDescription").setAttribute("style","ptext-align: center; font-size: x-large; color: white; border: none solid; border-radius: 2.56rem; background: linear-gradient(to bottom, rgba(136, 160, 195, 0.99),rgba(128, 152, 200, 0.98));display: flex; text-align: center;justify-content: center; align-items: center; max-width: 45rem; margin: 0 auto; margin-top: 1rem; padding: 1rem; box-shadow: 0 1rem 7rem 0 black;");
 }
 
 // function to display html element
 function DisplaycomeBackTommorow() {
 	document.getElementById("comeBackTommorow").innerHTML =
 		"You have already received todays reading! Please visit again after 24 hours!";
+	document.getElementById("comeBackTommorow").setAttribute("style","text-align: center; font-size: x-large; color: white; border: none solid; border-radius: 1rem; background: linear-gradient(to top, rgba(115, 138, 185, 0.99),rgba(115, 138, 185, 0.99));display: flex; text-align: center;justify-content: center; align-items: center; max-width: 58rem; margin: 0 auto; margin-top: 2rem; padding: 1rem; box-shadow: 0 1rem 7rem 0 black;");
 }
 
 // function to store data
@@ -102,3 +105,5 @@ function StoreData(StoreData) {
 	localStorage.setItem("dateOfLastReading", dayjs().day());
 	localStorage.setItem("history", history[0]);
 }
+
+returnTommorowEl = document.createElement("div")
