@@ -15,11 +15,13 @@ Tarot cards deck is the Rider-Waite Tarot Deck. Created in 1909, it is the most 
  I want to click a button and have a one or multiple cards shown with description
  I want that data saved persittantly 
 
-
 ## Acceptance Criteria
 User can click a button to draw a randomized card from tarot deck
 Card displays in center of screen with descripton displayed
 Users daily reading saved in persitent data
+
+## Link
+https://topwingman.github.io/Tarot-Teller
 
 ## Team Members
 - Helen Evans - https://github.com/HelenLEvans

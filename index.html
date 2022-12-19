@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://1.bp.blogspot.com/-oV5Paosphjc/XgJRyY9kI0I/AAAAAAAAJoQ/mTmRztRgq3kTm5fZcy2V1Fy-GhYcEv2lgCLcBGAsYHQ/s1600/aditya-chinchure-hyN9aU9Tm-c-unsplash.jpg"/>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"
       integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw=="
@@ -28,43 +28,183 @@
       dayjs.extend(window.dayjs_plugin_relativeTime);
     </script>
     <style>
-      body { 
+      body {
         font-family: "Almendra", serif !important;
+        background-image: url("/assets/Images/blue-cards.jpg");
+        background-size: cover;
       }
     </style>
   </head>
+
   <body>
-    <header class="mui-appbar mui--z3" style="background-color:#546E7A; background: linear-gradient(to top, rgba(106,133,182,0.95), rgba(135,167,222,0.95));">
+    <header
+      class="mui-appbar mui--z4"
+      style="
+        background: linear-gradient(
+          to bottom,
+          rgba(89, 112, 158, 0.99),
+          rgba(89, 112, 158, 0.992)
+        );
+      "
+    >
       <div class="mui--appbar-height mui--text-light">
-        <h1 class="mui--text-display3 row wow zoomInDown mui--text-center" style=" margin-top: 0.2rem;">
+        <h1
+          class="mui--text-display3 row wow zoomInDown mui--text-center"
+          style="
+            margin-top: 0rem;
+            -webkit-text-stroke: 0.6px;
+            -webkit-text-stroke-color: black;
+          "
+        >
           Your TarotTeller
         </h1>
       </div>
     </header>
 
-    <div
-      class="mui--text-display3 row wow zoomInDown mui--text-center"
-      style="margin-top: 3.2rem"
-    >
-      Your Daily Tarot Reading
-    </div>
+    <main>
+      <div
+        class="mui--text-display3 row wow zoomInDown mui--text-center"
+        style="
+          margin-top: 3.2rem;
+          color: white;
+          border: none solid;
+          border-radius: 1rem;
+          background: linear-gradient(
+            to top,
+            rgba(128, 152, 200, 0.99),
+            rgba(128, 152, 200, 0.99)
+          );
 
-    <div id="cardName"></div>
-    <div id="cardPlace"></div>
-    <div id="cardDescription"></div>
-
-    <div class="select-card">
-      <button
-        class="mui-btn mui-btn--raised mui-btn--large mui-btn--primary"  style="background-color:#546E7A; background: linear-gradient(to top, rgba(106,133,182,0.99), rgba(135,167,222,0.99));"
-        id="button"
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 44rem;
+          margin: 0 auto;
+          margin-top: 2rem;
+          padding: 0.5rem 0;
+          -webkit-text-stroke: 0.4px;
+          -webkit-text-stroke-color: black;
+          box-shadow: 0 0.5rem 3.3rem 0 black;
+        "
       >
-        <b>Reveal Your Fortune...</b>
-      </button>
-    </div>
-    <div id="cardName"></div>
-    <div id="cardPlace"></div>
-    <div id="cardDescription"></div>
-    <div id="comeBackTommorow" style=" text-align: center; color: red;"></div>
+        Your Daily Tarot Reading
+      </div>
+
+      <div
+        id="cardName"
+        style="
+          padding: 0.2rem;
+          color: white;
+          font-size: 2.6rem;
+          -webkit-text-stroke: 0.385px;
+          -webkit-text-stroke-color: black;
+          border: none solid;
+          border-radius: 2.56rem;
+          background: linear-gradient(
+            to bottom,
+            rgba(128, 152, 200, 0.99),
+            rgba(136, 160, 195, 0.98)
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 28rem;
+          margin: 0 auto;
+          margin-top: 1.5rem;
+          margin-bottom: 1.2rem;
+          box-shadow: 0 1rem 3.4rem 0 black;
+        "
+      ></div>
+      <div id="cardPlace" style="  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 44rem;
+      margin: 0 auto;
+      margin-top: 1.1rem;
+      padding: 0.5rem 0;"></div>
+
+      <div
+        id="cardDescription"
+        style="
+          padding: 1rem;
+          font-size: x-large;
+          color: white;
+          border: none solid;
+          border-radius: 2.56rem;
+          -webkit-text-stroke: 0.12px;
+          -webkit-text-stroke-color: black;
+          background: linear-gradient(
+            to bottom,
+            rgba(136, 160, 195, 0.99),
+            rgba(128, 152, 200, 0.98)
+          );
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          max-width: 45rem;
+          margin: 0 auto;
+          margin-top: 1.3rem;
+          padding: 1rem;
+          box-shadow: 0 1rem 7rem 0 black;
+        "
+      ></div>
+
+      <div class="select-card">
+        <button style="
+        
+        margin-top: 3.2rem;
+        color: white;
+        border: none solid;
+        border-radius: 1rem;
+        background: linear-gradient(
+          to top,
+          rgba(89, 112, 158, 0.99),
+          rgba(89, 112, 158, 0.992)
+        );
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 2rem 0;"
+          class="mui-btn mui-btn--raised mui-btn--large mui-btn"
+          id="button"
+        >
+          <b>Reveal Your Fortune...</b>
+        </button>
+      </div>
+      <div id="cardName"></div>
+      <div id="cardPlace"></div>
+      <div id="cardDescription"></div>
+      <div
+        id="comeBackTommorow"
+        style="
+          text-align: center;
+          font-size: x-large;
+          color: white;
+          border: none solid;
+          border-radius: 1rem;
+          background: linear-gradient(
+            to bottom,
+            rgba(115, 138, 185, 0.99),
+            rgba(115, 138, 185, 0.99)
+          );
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          max-width: 58rem;
+          margin: 0 auto;
+          margin-top: 1rem;
+          padding: 1rem;
+          box-shadow: 0 1rem 7rem 0 black;
+        "
+      ></div>
+    </main>
 
     <script src="./assets/js/script.js"></script>
   </body>
