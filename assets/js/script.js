@@ -89,7 +89,7 @@ function DisplayCard(imgID) {
 // function to display html element
 function DisplayCardDescription(cardDescription) {
 	document.getElementById("cardDescription").innerHTML = cardDescription;
-	document.getElementById("cardDescription").setAttribute("style","ptext-align: center; font-size: x-large; color: white; border: none solid; border-radius: 2.56rem; background: linear-gradient(to bottom, rgba(136, 160, 195, 0.99),rgba(128, 152, 200, 0.98));display: flex; text-align: center;justify-content: center; align-items: center; max-width: 45rem; margin: 0 auto; margin-top: 1rem; padding: 1rem; box-shadow: 0 1rem 7rem 0 black;");
+	document.getElementById("cardDescription").setAttribute("style","text-align: center; font-size: x-large; color: white; border: none solid; border-radius: 2.56rem; background: linear-gradient(to bottom, rgba(136, 160, 195, 0.99),rgba(128, 152, 200, 0.98));display: flex; text-align: center;justify-content: center; align-items: center; max-width: 45rem; margin: 0 auto; margin-top: 1rem; padding: 1rem; box-shadow: 0 1rem 7rem 0 black;");
 }
 
 // function to display html element
